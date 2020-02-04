@@ -11,8 +11,41 @@
     background: #f6ff4f;
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(5, 1fr);
+}
 
 
+#left-hand-nav {
+    border: 2px solid transparent;
+    max-height: 50vh;
+    font-size: 2em;
+    font-family: 'Bungee Inline', cursive;
+    margin-bottom: 50%;
+}
+
+.flex-container-skeleton {
+    border: 5px solid pink;
+    border-radius: 20px;
+    display: flex;
+}
+
+.flex-section:nth-child(2) {
+    background: pink;
+    width: 80%;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    padding: 20px;
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
 }
 
 .first-art {
@@ -201,7 +234,6 @@ h1 {
 
 .left-section {
     padding: 20px;
-    grid-area: 1 / 1 / 2 / 2;
 }
 .right-section {
     padding: 10px;
@@ -216,6 +248,23 @@ h1 {
 #third-container {
     display: flex;
     flex-direction: row;
+    grid-area: 4 / 3 / 5 / 4;
+    margin-top: -1%;
+}
+
+.left-side-container {
+    display: flex;
+}
+
+
+#moon-left-eye {
+    grid-area: 3/ 2/ 4/ 3;
+    margin-bottom: 1%;
+}
+
+#moon-right-eye {
+    grid-area: 3/ 4/ 4/ 5;
+    margin-bottom: 1%;
 }
 
 
@@ -223,15 +272,15 @@ h1 {
 
 /*here starts css for moving letters*/
 
-.lettersFrijole {
-    font-family: 'Frijole', cursive;
+.Monofett {
+    font-family: 'Monofett', cursive;
     font-size: 2em;
     text-align: center;
 }
 
 #second-container {
     display: flex;
-    flex-direction: row;
+    margin-top: 5%;
 }
 
 .moving-letter1 {
@@ -241,23 +290,23 @@ h1 {
 
 @keyframes letterOneMove {
     0% {
-        transform: translate3d(40px, 0, 0);
+        transform: translate3d(20px, 0, 0); color: #f6ff4f;
     }
 
     25% {
-        transform: translate3d(69px, 0, 0);
+        transform: translate3d(10px, 0, 0); color: grey;
     }
 
     50% {
-        transform: translate3d(2px, 0, 0);
+        transform: translate3d(2px, 0, 0); color: black;
     }
 
     75% {
-        transform: translate3d(69px, 0, 0);
+        transform: translate3d(40px, 0, 0); color: grey;
     }
 
     100% {
-        transform: translate3d(40px, 0, 0);
+        transform: translate3d(20px, 0, 0); color: #f6ff4f;
     }
 }
 
@@ -270,23 +319,23 @@ h1 {
 
 @keyframes letterOneMove {
     0% {
-        transform: translate3d(40px, 0, 0); color: white;
+        transform: translate3d(20px, 0, 0);
     }
 
     25% {
-        transform: translate3d(69px, 0, 0); color: grey;
+        transform: translate3d(10px, 0, 0);
     }
 
     50% {
-        transform: translate3d(2px, 0, 0); color: black;
+        transform: translate3d(2px, 0, 0);
     }
 
     75% {
-        transform: translate3d(69px, 0, 0); color: grey;
+        transform: translate3d(40px, 0, 0);
     }
 
     100% {
-        transform: translate3d(40px, 0, 0); color: white;
+        transform: translate3d(20px, 0, 0);
     }
 }
 
@@ -299,11 +348,11 @@ h1 {
 
 @keyframes letterOneMove {
     0% {
-        transform: translate3d(40px, 0, 0); color: white;
+        transform: translate3d(20px, 0, 0); color: #f6ff4f;
     }
 
     25% {
-        transform: translate3d(69px, 0, 0); color: grey;
+        transform: translate3d(10px, 0, 0); color: grey;
     }
 
     50% {
@@ -311,11 +360,11 @@ h1 {
     }
 
     75% {
-        transform: translate3d(69px, 0, 0); color: grey;
+        transform: translate3d(40px, 0, 0); color: grey;
     }
 
     100% {
-        transform: translate3d(40px, 0, 0); color: white;
+        transform: translate3d(20px, 0, 0); color: #f6ff4f;
     }
 }
 
@@ -328,11 +377,11 @@ h1 {
 
 @keyframes letterOneMove {
     0% {
-        transform: translate3d(40px, 0, 0); color: white;
+        transform: translate3d(20px, 0, 0); color: #f6ff4f;
     }
 
     25% {
-        transform: translate3d(69px, 0, 0); color: grey;
+        transform: translate3d(10px, 0, 0); color: grey;
     }
 
     50% {
@@ -340,21 +389,72 @@ h1 {
     }
 
     75% {
-        transform: translate3d(69px, 0, 0); color: grey;
+        transform: translate3d(40px, 0, 0); color: grey;
     }
 
     100% {
-        transform: translate3d(40px, 0, 0); color: white;
+        transform: translate3d(20px, 0, 0); color: #f6ff4f;
     }
 }
 
 .moving-letter5 {
-    animation: letterOneMove 5s;
+    animation: letterTwoMove 5s;
     animation-iteration-count: infinite;
     animation-delay: 2s;
     margin-left: 20%;
 }
 
+@keyframes letterTwoMove {
+    0% {
+        transform: translate3d(0, 20px, 0); color: #f6ff4f;
+    }
+
+    25% {
+        transform: translate3d(0, 10px, 0); color: grey;
+    }
+
+    50% {
+        transform: translate3d(0, 2px, 0); color: black;
+    }
+
+    75% {
+        transform: translate3d(0, 40px, 0); color: grey;
+    }
+
+    100% {
+        transform: translate3d(0, 20px, 0); color: #f6ff4f;
+    }
+}
+
+@keyframes letterOneMove {
+    0% {
+        transform: translate3d(20px, 0, 0); color: #f6ff4f;
+    }
+
+    25% {
+        transform: translate3d(10px, 0, 0); color: grey;
+    }
+
+    50% {
+        transform: translate3d(2px, 0, 0); color: black;
+    }
+
+    75% {
+        transform: translate3d(40px, 0, 0); color: grey;
+    }
+
+    100% {
+        transform: translate3d(20px, 0, 0); color: #f6ff4f;
+    }
+}
+
+/*.moving-letter6 {*/
+/*    animation: letterOneMove 5s;*/
+/*    animation-iteration-count: infinite;*/
+/*    animation-delay: 2.5s;*/
+/*    margin-left: 40%;*/
+/*}*/
+
 @keyframes letterOneMove {
     0% {
         transform: translate3d(40px, 0, 0); color: #f6ff4f;
@@ -377,41 +477,12 @@ h1 {
     }
 }
 
-.moving-letter6 {
-    animation: letterOneMove 5s;
-    animation-iteration-count: infinite;
-    animation-delay: 2.5s;
-    margin-left: 40%;
-}
-
-@keyframes letterOneMove {
-    0% {
-        transform: translate3d(40px, 0, 0); color: #f6ff4f;
-    }
-
-    25% {
-        transform: translate3d(69px, 0, 0); color: grey;
-    }
-
-    50% {
-        transform: translate3d(2px, 0, 0); color: black;
-    }
-
-    75% {
-        transform: translate3d(69px, 0, 0); color: grey;
-    }
-
-    100% {
-        transform: translate3d(40px, 0, 0); color: #f6ff4f;
-    }
-}
-
-.moving-letter7 {
-    animation: letterOneMove 5s;
-    animation-iteration-count: infinite;
-    animation-delay: 3s;
-    margin-left: 5%;
-}
+/*.moving-letter7 {*/
+/*    animation: letterOneMove 5s;*/
+/*    animation-iteration-count: infinite;*/
+/*    animation-delay: 3s;*/
+/*    margin-left: 5%;*/
+/*}*/
 
 @keyframes letterOneMove {
     0% {
@@ -567,6 +638,7 @@ h1 {
 
 /*here starts code for blob 7*/
 #blob7 {
+    margin-bottom: 75%;
     position: absolute;
     height: 100px;
     width: 100px;
