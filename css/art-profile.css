@@ -1,3 +1,151 @@
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    border-radius: 20px;
+    grid-area: 2 / 2/ 3/ 5;
+}
+
+/* images hidden here*/
+.mySlides {
+    display: none;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.3s ease-in-out;
+    border-radius: 0 15px 35px 0;
+    user-select: none;
+    animation: arrow-colors 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow-colors {
+    0% {
+        color: #f6ff4f;
+    }
+
+    25% {
+        color: #04EBBE;
+    }
+
+    50% {
+        color: #A5E703;
+    }
+
+    75% {
+        color: #E76703;
+    }
+
+    100% {
+        color: #f6ff4f;
+    }
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 15px 0px 0px 35px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    /*background-color: rgba(0,0,0,0.8);*/
+    animation: background-colors 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes background-colors {
+    0% {
+        background: cyan;-webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    25% {
+        background: yellow;-webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    50% {
+        background: red;-webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+    75% {
+        background: green;-webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        background: cyan; -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/*//////////////*/
 * {
     box-sizing: border-box;
     margin: auto;
@@ -26,11 +174,13 @@
     border: 5px solid pink;
     border-radius: 20px;
     display: flex;
+    grid-area: 3 / 2/ 4/ 5;
+    margin-top: 1%;
 }
 
 .flex-section:nth-child(2) {
     background: pink;
-    width: 80%;
+    width: 20%;
 }
 
 ul {
@@ -127,7 +277,7 @@ h1 {
 
 .primary-image {
     border-radius: 29%;
-    box-shadow: 0px 3px 0px black,
+    box-shadow: 0px 40px 0px black,
     10px 14px 10px rgba(0,0,0,0.15),
     0px 24px 2px rgba(0,0,0,0.1),
     0px 34px 30px rgba(0,0,0,0.1);
@@ -267,6 +417,33 @@ h1 {
     margin-bottom: 1%;
 }
 
+.main-moon-container {
+    width: 0 20px;
+}
+
+.moon-main-container:nth-child(1) {
+    margin-top: 15%;
+}
+
+.moon-main-container:nth-child(2) {
+    margin-top: 50%;
+}
+
+.moon-main-container:nth-child(3) {
+    margin-top: 60%; background: blue;
+}
+
+.moon-main-container:nth-child(4) {
+    margin-top: 50%;
+}
+
+.moon-main-container:nth-child(5) {
+    margin-top: 15%;
+}
+
+.moon-main-container:nth-child(6) {
+    margin-top: 60%;
+}
 
 
 
@@ -543,10 +720,10 @@ h1 {
     width: 30px;
     background: #488924;
     margin: 0 1em 1em 0;
-    border-top-left-radius: 200px;
-    border-top-right-radius: 200px;
-    border-bottom-left-radius: 75px;
-    border-bottom-right-radius: 75px;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 300px;
     margin-left: 30%;
     margin-top: 15%;
     animation: blobsixthmouth 1s;
