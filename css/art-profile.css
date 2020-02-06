@@ -1,5 +1,68 @@
 
+/*burger container section*/
 
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+/*body {*/
+/*    background: #272727;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    min-height: 100vh;*/
+/*}*/
+.header-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /* border: 3px solid #fff; */
+}
+.header-hamburger {
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+}
+.header-hamburger::before,
+.header-hamburger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all 2s ease-in-out;
+}
+.header-hamburger::before {
+    transform: translateY(-40px);
+}
+.header-hamburger::after {
+    transform: translateY(40px);
+}
+/* ANIMATION */
+.header-container.open .header-hamburger {
+    transform: translateX(-75px);
+    background: transparent;
+    box-shadow: none;
+}
+.header-container.open .header-hamburger::before {
+    transform: rotate(45deg) translate(75px, -75px);
+}
+.header-container.open .header-hamburger::after {
+    transform: rotate(-45deg) translate(2px, 2px);
+}
+
+/*burger container ends here*/
 
 
 /* Slideshow container */
@@ -9,6 +72,7 @@
     border-radius: 20px;
     grid-area: 2 / 2/ 3/ 5;
 }
+
 
 /* images hidden here*/
 .mySlides {

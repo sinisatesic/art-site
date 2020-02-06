@@ -10,7 +10,11 @@
 <body>
 <div id="whole-page-container">
     <div class="main-section">
-        <header class="header1">WELCOME</header>
+        <header class="header1">WELCOME
+<!--            <div class="header-container">-->
+<!--                <div class="header-hamburger"></div>-->
+<!--            </div>-->
+        </header>
         <h2 id="dojo">TO DA DOJO</h2>
         <br><br>
         <main>
@@ -63,20 +67,24 @@
 
     <!--    here begins left-hand section-->
     <div class="left-section">
-        <div class="left-side-container">
-            <nav id="left-hand-nav">
-                <ul>
-                    <li>
-                        <a href="#">Resume</a>
-                    </li>
-                    <li>
-                        <a href="#">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#">Artwork</a>
-                    </li>
-                </ul>
-            </nav>
+<!--        <div class="left-side-container">-->
+<!--            <nav id="left-hand-nav">-->
+<!--                <ul>-->
+<!--                    <li>-->
+<!--                        <a class="links" href="#">Resume</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="links" href="#">Projects</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a class="links" href="#">Artwork</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </nav>-->
+<!--        </div>-->
+
+        <div class="header-container">
+            <div class="header-hamburger"></div>
         </div>
         <!--            left-section animated blob starts here-->
         <div id="blob7">
@@ -333,36 +341,7 @@
         </footer> -->
 </div>
 
-<script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    // Next/previous controls
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    // Thumbnail image controls
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-    }
-</script>
+<script src="js/art-profile.js"></script>
 
 </body>
 </html>
