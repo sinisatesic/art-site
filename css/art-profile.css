@@ -20,7 +20,7 @@
     align-items: center;
     width: 100px;
     height: 80px;
-    cursor: pointer;
+    /*cursor: pointer;*/
     transition: all .75s ease-in-out;
     /* border: 3px solid #fff; */
 }
@@ -47,6 +47,7 @@
     background: #ff7e63;
 }
 .header-hamburger::after {
+    cursor: pointer;
     transform: translateZ(40px);
     animation: burger-link-background 5s;
     animation-iteration-count: infinite;
