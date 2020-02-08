@@ -105,7 +105,7 @@ a {
     color: #293250;
     margin-left: 5px;
     /*margin-top: -8px;*/
-    font-size: 1em;
+    font-size: .8em;
     font-family: 'Press Start 2P', cursive;
     text-decoration-line: none;
     text-underline: none;
@@ -603,9 +603,9 @@ h1 {
     border-radius: 15px;
     grid-area: 1/ 5/ 2/ 6;
     margin-top: 90%;
-    height: 30vh;
+    height: 35vh;
     background: #293250;
-    width: 15vw;
+    width: 19vw;
 }
 
 .right-section p {
