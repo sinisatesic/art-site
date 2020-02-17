@@ -505,10 +505,16 @@ h1 {
 
 
 .moon1 {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    box-shadow: 15px 15px 0 0 red;
+ width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid red;
+    border-left: 60px solid red;
+    border-bottom: 60px solid red;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
     animation: rotate 5s;
     animation-iteration-count: infinite;
 }
@@ -520,50 +526,80 @@ h1 {
 
 
 .moon2 {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    box-shadow: 15px 15px 0 0 #960803;
+ width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid red;
+    border-left: 60px solid red;
+    border-bottom: 60px solid red;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
     transform: rotate(120deg);
     animation: rotate 5s;
     animation-iteration-count: infinite;
 }
 
 .moon3 {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    box-shadow: 15px 15px 0 0 #b00b05;
+    width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid red;
+    border-left: 60px solid red;
+    border-bottom: 60px solid red;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
     transform: rotate(107deg);
     animation: rotate 5s;
     animation-iteration-count: infinite;
 }
 
 .moon4 {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    box-shadow: 15px 15px 0 0 #db0c04;
+    width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid red;
+    border-left: 60px solid red;
+    border-bottom: 60px solid red;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
     transform: rotate(90deg);
     animation: rotate 5s;
     animation-iteration-count: infinite;
 }
 
 .moon5 {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    box-shadow: 15px 15px 0 0 #fc443d;
+    width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid red;
+    border-left: 60px solid red;
+    border-bottom: 60px solid red;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
     transform: rotate(60deg);
     animation: rotate 5s;
     animation-iteration-count: infinite;
 }
 
 .moon6 {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    box-shadow: 15px 15px 0 0 #ffa9a6;
+    width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid red;
+    border-left: 60px solid red;
+    border-bottom: 60px solid red;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
     transform: rotate(40deg);
     animation: rotate 5s;
     animation-iteration-count: infinite;
@@ -648,7 +684,7 @@ h1 {
 }
 
 .main-moon-container {
-    width: 20px;
+    /*width: 75vw;*/
 }
 
 .moon-main-container:nth-child(1) {
@@ -656,11 +692,11 @@ h1 {
 }
 
 .moon-main-container:nth-child(2) {
-    margin-top: 50%;
+    margin-top: -90%;
 }
 
 .moon-main-container:nth-child(3) {
-    margin-top: 60%; background: blue;
+    margin-top: 100%; background: blue;
 }
 
 .moon-main-container:nth-child(4) {
@@ -668,7 +704,7 @@ h1 {
 }
 
 .moon-main-container:nth-child(5) {
-    margin-top: 15%;
+    margin-top: 75%;
 }
 
 .moon-main-container:nth-child(6) {
