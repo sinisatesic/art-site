@@ -505,105 +505,82 @@ h1 {
 
 
 .moon1 {
- width: 0px;
-    height: 0px;
-    border-right: 60px solid transparent;
-    border-top: 60px solid red;
-    border-left: 60px solid red;
-    border-bottom: 60px solid red;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-    animation: rotate 5s;
+    width: 150px;
+    height: 100px;
+    transform: skew(20deg);
+    background: red;
+    border-radius: 20px;
+    animation: rotate 10s;
     animation-iteration-count: infinite;
-}
-
-@keyframes rotate{
-    0%{ transform: rotate(0deg); }
-    100%{ transform: rotate(360deg); }
+    grid-area: 3/ 1/ 4/ 2;
 }
 
 
 .moon2 {
- width: 0px;
-    height: 0px;
-    border-right: 60px solid transparent;
-    border-top: 60px solid red;
-    border-left: 60px solid red;
-    border-bottom: 60px solid red;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+    width: 150px;
+    height: 100px;
+    transform: skew(20deg);
+    background: red;
+    border-radius: 20px;
     transform: rotate(120deg);
-    animation: rotate 5s;
+    animation: rotate 10s;
     animation-iteration-count: infinite;
+    grid-area: 4/ 1/ 5/ 2;
 }
 
 .moon3 {
-    width: 0px;
-    height: 0px;
-    border-right: 60px solid transparent;
-    border-top: 60px solid red;
-    border-left: 60px solid red;
-    border-bottom: 60px solid red;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+    width: 150px;
+    height: 100px;
+    transform: skew(20deg);
+    background: red;
+    border-radius: 20px;
     transform: rotate(107deg);
-    animation: rotate 5s;
+    animation: rotate 10s;
     animation-iteration-count: infinite;
+    grid-area: 5/ 1/ 6/ 2;
 }
 
-.moon4 {
-    width: 0px;
-    height: 0px;
-    border-right: 60px solid transparent;
-    border-top: 60px solid red;
-    border-left: 60px solid red;
-    border-bottom: 60px solid red;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-    transform: rotate(90deg);
-    animation: rotate 5s;
-    animation-iteration-count: infinite;
+
+@keyframes rotate{
+    0% {
+        transform: rotate(90deg); background: #75d5fd;
+
+        position:relative;
+        margin:0 auto;
+        display:block;
+
+        background:#fff;
+        -webkit-box-shadow:0 0 120px #000;
+    }
+    25% {
+        transform: rotate(120deg); background: #b76cfd;
+        -webkit-box-shadow:0 0 120px #000;
+
+    }
+    50% {
+        transform: rotate(160deg); background: #ff2281;
+        -webkit-box-shadow:1400px 420px 0 #000;
+
+    }
+    75% {
+        transform: rotate(360deg);background: #011ffd;
+        -webkit-box-shadow:0 0 120px #000;
+
+    }
+    100% {
+        transform: rotate(90deg); background: #011ffd;
+
+        position:relative;
+        margin:0 auto;
+        display:block;
+
+        background:#fff;
+        -webkit-box-shadow:0 0 120px #000;
+    }
 }
 
-.moon5 {
-    width: 0px;
-    height: 0px;
-    border-right: 60px solid transparent;
-    border-top: 60px solid red;
-    border-left: 60px solid red;
-    border-bottom: 60px solid red;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-    transform: rotate(60deg);
-    animation: rotate 5s;
-    animation-iteration-count: infinite;
-}
 
-.moon6 {
-    width: 0px;
-    height: 0px;
-    border-right: 60px solid transparent;
-    border-top: 60px solid red;
-    border-left: 60px solid red;
-    border-bottom: 60px solid red;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-    transform: rotate(40deg);
-    animation: rotate 5s;
-    animation-iteration-count: infinite;
-}
+
 
 
 
