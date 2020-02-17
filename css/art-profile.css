@@ -612,17 +612,17 @@ h1 {
 .left-section {
     /*padding: 20px;*/
 }
-.right-section {
+.textNextToSlidingImagesContainer {
+    max-width: 20vw;
     border: 15px solid #3c486e;
     border-radius: 15px;
-    grid-area: 1/ 4/ 2/ 5;
-    margin-top: 50%;
-    margin-left: 65%;
-    height: 35vh;
+    margin-top: 40%;
+    margin-left: -40%;
+    grid-area: 1/ 2/ 2/ 3;
     background: #293250;
 }
 
-.right-section p {
+.textNextToSlidingImagesContainer p {
     color: #ffd55a;
     font-family: 'Press Start 2P', cursive;
     font-size: 1.75em;
