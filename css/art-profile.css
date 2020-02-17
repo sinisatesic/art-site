@@ -139,7 +139,7 @@ a {
     display: flex;
     flex-direction: column;
     margin-top: -55%;
-    margin-left: 150%;
+    margin-left: 100%;
     max-width: 30%;
 
 }
@@ -497,7 +497,7 @@ h1 {
     10px 14px 10px rgba(0,0,0,0.15),
     0px 24px 2px rgba(0,0,0,0.1),
     0px 34px 30px rgba(0,0,0,0.1);
-    animation: shifty 5s;
+    animation: primaryImageShiftingAnimation 5s;
     animation-iteration-count: infinite;
 }
 
@@ -587,7 +587,7 @@ h1 {
 
 /*this is where moon divs section ends*/
 
-@keyframes shifty {
+@keyframes primaryImageShiftingAnimation {
     0%{
         transform: translate3d(0, -75px, 0);
     }

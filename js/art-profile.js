@@ -23,7 +23,7 @@ menuContainer.addEventListener('click', () => {
 //     } else {
 //         menuLinks.classList.remove('open');
 //         menuOpen = false;
-//     }
+//     }d
 // });
 
 // here ends js for hamburger
