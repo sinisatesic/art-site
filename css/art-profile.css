@@ -384,7 +384,7 @@ a {
 
 .flex-section:nth-child(1) {
     border: 5px solid red;
-    border-radius: 20px;
+    border-radius: 60px;
 }
 .flex-section:nth-child(2) {
     border: 5px solid green;
@@ -392,7 +392,7 @@ a {
 }
 .flex-section:nth-child(3) {
     border: 5px solid yellow;
-    border-radius: 20px;
+    border-radius: 120px;
 }
 
 
@@ -509,7 +509,6 @@ h1 {
     width: 150px;
     height: 100px;
     transform: skew(20deg);
-    background: red;
     border-radius: 20px;
     animation: rotate 4s;
     animation-iteration-count: infinite;
@@ -521,7 +520,6 @@ h1 {
     width: 150px;
     height: 100px;
     transform: skew(20deg);
-    background: red;
     border-radius: 20px;
     transform: rotate(180deg);
     animation: rotate 4s;
@@ -533,10 +531,9 @@ h1 {
     width: 150px;
     height: 100px;
     transform: skew(20deg);
-    background: red;
     border-radius: 20px;
     transform: rotate(360deg);
-    animation: rotate 4s;
+    animation: rotate 5s;
     animation-iteration-count: infinite;
     grid-area: 5/ 1/ 6/ 2;
 }
@@ -560,7 +557,7 @@ h1 {
     }
     50% {
         transform: rotate(360deg); background: #ff2281;
-        -webkit-box-shadow:400px 420px 0 #000;
+        -webkit-box-shadow:100px 80px 0 #eee;
 
     }
     75% {
