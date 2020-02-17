@@ -139,6 +139,7 @@ a {
     display: flex;
     flex-direction: column;
     margin-top: -55%;
+    margin-left: 150%;
     max-width: 40%;
 
 }
@@ -488,7 +489,8 @@ h1 {
 
 
 .primary-image {
-    width: 100%;
+    margin-left: 20%;
+    width: 60%;
     height: 100%;
     border-radius: 29%;
     box-shadow: 2px .5px 2px 2px,
@@ -602,8 +604,9 @@ h1 {
 .right-section {
     border: 15px solid #3c486e;
     border-radius: 15px;
-    grid-area: 1/ 5/ 2/ 6;
-    margin-top: 90%;
+    grid-area: 1/ 4/ 2/ 5;
+    margin-top: 50%;
+    margin-left: 50%;
     height: 35vh;
     background: #293250;
     width: 19vw;
