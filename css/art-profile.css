@@ -124,7 +124,7 @@ a {
 
 .burger-links:hover {
     cursor: pointer;
-    font: black;
+    font-color: black;
     font-size: .9em;
     transition: .55s ease-in-out;
     opacity:0.7;
@@ -211,6 +211,7 @@ a {
 }
 
 /* Next & previous buttons */
+/*below, the prev and next are the navigation arrows within slideshow container:*/
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -407,7 +408,7 @@ li a {
     text-decoration: none;
     color: black;
 }
-
+/*below, the images within the slideshow are listed:*/
 .first-art {
     margin-top: 1%;
     grid-area: 2 / 1 / 3/ 3;
@@ -931,19 +932,19 @@ h1 {
 }
 
 
-/*here starts code for blob 6*/
-#blob6 {
+/*here starts code for the red, circular character on top-left or page*/
+#redCircleCharacter {
     position: absolute;
     height: 100px;
     width: 100px;
     border-radius: 50%;
     background: black;
     z-index: 2;
-    animation: blobbysixth 3s;
+    animation: redCircleCharacterMoveAnimation 3s;
     animation-iteration-count: infinite;
 }
 
-@keyframes blobbysixth {
+@keyframes redCircleCharacterMoveAnimation {
     0%{
         transform: translate3d(12em, 0em, 0em); background: #9c1c17;
     }
@@ -961,7 +962,7 @@ h1 {
     }
 }
 
-#blob6M {
+#redCircleCharacterMouth {
     position: relative;
     height: 15px;
     width: 30px;
@@ -973,11 +974,11 @@ h1 {
     border-bottom-right-radius: 300px;
     margin-left: 30%;
     margin-top: 15%;
-    animation: blobsixthmouth 1s;
+    animation: redCircleCharacterMouthAnimation 1s;
     animation-iteration-count: infinite;
 }
 
-@keyframes blobsixthmouth {
+@keyframes redCircleCharacterMouthAnimation {
     0%{
         background: #750202;
     }
@@ -995,7 +996,7 @@ h1 {
     }
 }
 
-#blob6Leye {
+#redCircleCharacterLeftEye{
     background: black;
     position: relative;
     width: 10px;
@@ -1007,7 +1008,7 @@ h1 {
     margin-top: 35%;
 }
 
-#blob6Reye {
+#redCircleCharacterRightEye {
     background: black;
     position: relative;
     width: 10px;
@@ -1019,7 +1020,7 @@ h1 {
     margin-top: -1%;
 }
 
-#blob6Liris {
+#redCircleCharacterLeftIris {
     position: absolute;
     width: 10px;
     height: 10px;
@@ -1030,7 +1031,7 @@ h1 {
     animation-iteration-count: infinite;
 }
 
-#blob6Riris {
+#redCircleCharacterRightEyeIris {
     position: absolute;
     width: 10px;
     height: 10px;
@@ -1060,18 +1061,18 @@ h1 {
 }
 
 
-/*here starts code for blob 7*/
-#blob7 {
+/*this is start of blue, circular character on top-left area of site*/
+#blueCircleCharacter {
     margin-bottom: 75%;
     position: absolute;
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    animation: blobsevenmouth 5s;
+    animation: blueCircleCharacterAnimation 5s;
     animation-iteration-count: infinite;
 }
 
-#blob7Leye {
+#blueCircleCharacterLeftEye {
     background: #f3f7e1;
     position: relative;
     width: 10px;
@@ -1085,7 +1086,7 @@ h1 {
     border-top-right-radius: 45%;
 }
 
-#blob7Liris {
+#blueCircleCharacterLeftIris {
     position: absolute;
     width: 7px;
     height: 7px;
@@ -1093,11 +1094,11 @@ h1 {
     margin-left: 85%;
     margin-top: 20%;
     background: white;
-    animation: blobseveneyes 3s;
+    animation: blueCircleCharacterIrisAnimation 3s;
     animation-iteration-count: infinite;
 }
 
-#blob7Reye {
+#blueCircleCharacterRightEye {
     background: #f3f7e1;
     position: relative;
     width: 10px;
@@ -1109,7 +1110,7 @@ h1 {
     margin-top: -10%;
 }
 
-#blob7Riris {
+#blueCircleCharacterRightIris {
     position: absolute;
     width: 7px;
     height: 7px;
@@ -1117,11 +1118,11 @@ h1 {
     margin-left: 55%;
     margin-top: 85%;
     background: white;
-    animation: blobseveneyes 3s;
+    animation: blueCircleCharacterEyeAnimation 3s;
     animation-iteration-count: infinite;
 }
 
-@keyframes blobseveneyes {
+@keyframes blueCircleCharacterEyeAnimation {
     0%{
         background: #edf5ab; transform: scaleY(0);
     }
@@ -1139,7 +1140,7 @@ h1 {
     }
 }
 
-#blob7M {
+#blueCircleCharacterMouth {
     background: #f3f7e1;
     position: relative;
     width: 10px;
@@ -1154,7 +1155,7 @@ h1 {
 }
 
 
-@keyframes blobsevenmouth {
+@keyframes blueCircleCharacterAnimation {
     0%{
         background: #293250; transform: translate3d(1em, 0em, 0em);
     }
@@ -1172,4 +1173,4 @@ h1 {
     }
 }
 
-/*here ends css for blob 7*/
+/*here ends code for blue, circular character on top-left corner*/
