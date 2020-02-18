@@ -42,7 +42,7 @@ html {
     position: absolute;
     width: 80px;
     height: 30px;
-    /*background: #fff;*/
+    border: 7px solid black;
     border-radius: 15px;
     box-shadow: 0 2px 5px rgba(255,101,47,.2);
     transition: all .75s ease-in-out;
@@ -55,28 +55,28 @@ html {
 .header-hamburger::after {
     cursor: pointer;
     transform: translateZ(40px);
-    animation: burger-link-background 5s;
+    animation: burger-link-background 3s;
     animation-iteration-count: infinite;
 }
 
 @keyframes burger-link-background {
     0% {
-        background: #ffd55a;
+        background: #fac71e;
     }
-    5% {
+    15% {
         background: #9e1e19;
     }
-    10% {
+    30% {
         background: #798190;
     }
-    15%{
+    60%{
         background: #801814;
     }
-    20%{
+    85%{
         background: #9e1e19;
     }
     100%{
-        background: #ffd55a;
+        background: #fce9a9;
     }
 }
 /* ANIMATION */
