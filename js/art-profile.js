@@ -12,24 +12,6 @@ menuContainer.addEventListener('click', () => {
     }
 });
 
-// <a class="links" href="#">Resume</a>
-
-// const menuLinks = document.querySelector('.links');
-// let menuOpen = false;
-// menuLinks.addEventListener('click', () => {
-//     if(!menuOpen) {
-//         menuLinks.classList.add('open');
-//         menuOpen = true;
-//     } else {
-//         menuLinks.classList.remove('open');
-//         menuOpen = false;
-//     }d
-// });
-
-// here ends js for hamburger
-
-
-
 
 
 var slideIndex = 1;
