@@ -1,4 +1,5 @@
 // here begins js for hamburger
+console.log('Greetings, traveler! This site is still in-progress!');
 
 const menuContainer = document.querySelector('.header-container');
 let menuOpen = false;
