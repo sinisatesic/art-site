@@ -41,8 +41,11 @@ On the other side is a CSS-constructed set of divs which change in rotation spee
 
 ![image](https://user-images.githubusercontent.com/56378424/85233862-36f74b80-b3cf-11ea-95a9-a119419172b3.png)
 
-Further down on the page is a slide-show container created with JS; below is its code:
+Further down on the page is a slide-show container created with JS:
 
+![image](https://user-images.githubusercontent.com/56378424/85233974-082da500-b3d0-11ea-9a19-47a0ccea9f63.png)
+
+below is its code:
 ```
 var slideIndex = 1;
 showSlides(slideIndex);
